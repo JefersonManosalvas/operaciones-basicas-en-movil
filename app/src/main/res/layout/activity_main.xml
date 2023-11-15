@@ -4,15 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1D2E3"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lblTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Operaciones Basicas"
+        android:textColor="#0B0B0B"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/lblcampo1"
+        android:layout_width="153dp"
+        android:layout_height="46dp"
+        android:text="Ingrese primer numero"
+        android:textColor="#E40D0D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPrimerNumero"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/lblCampo2"
+        android:layout_width="169dp"
+        android:layout_height="47dp"
+        android:text="Ingrese segundo numero"
+        android:textColor="#CF1111"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtSegundoNumero"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
+        android:text="Resultado"
+        android:textColor="#DF0808"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="652dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:onClick="sumar_numeros"
+        android:text="Calcular"
+        android:textColor="#9A1A11"
+        app:backgroundTint="#D1BCBC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPrimerNumero"
+        android:layout_width="194dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Primer numero" />
+
+    <EditText
+        android:id="@+id/txtSegundoNumero"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Segundo Numero" />
+
+    <TextView
+        android:id="@+id/lblRes"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
